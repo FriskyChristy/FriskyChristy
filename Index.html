@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FriskyChristy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div id="age-verification">
+        <p>Are you over 18?</p>
+        <button id="yes-button">Yes</button>
+        <button id="no-button">No</button>
+    </div>
+    <header>
+        <h1>FriskyChristy</h1>
+        <nav>
+            <ul>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#wishlist">Wishlist</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="photos">
+            <h2>Photos</h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="photo1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="photo2.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="photo3.jpg" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+        <section id="wishlist">
+            <h2>Wishlist</h2>
+            <ul>
+                <li>Service 1 - $100</li>
+                <li>Service 2 - $200</li>
+                <li>Service 3 - $300</li>
+            </ul>
+        </section>
+        <section id="videos">
+            <h2>Videos</h2>
+            <p>Purchase videos here.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 FriskyChristy</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
